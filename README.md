@@ -1,6 +1,3 @@
-Sure, here's the content in Markdown format for the README.md file:
-
-```markdown
 # HTML and CSS Learning Repository
 
 Welcome to my HTML and CSS learning repository! Here, I've documented my journey of mastering the art of web development using HTML and CSS. This repository showcases a collection of projects, exercises, and code samples that highlight my progress in understanding and applying the fundamentals of web design and styling.
