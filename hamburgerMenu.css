@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:ital,wght@0,400;1,100&family=Source+Sans+Pro:wght@300&family=Varela+Round&display=swap');
+
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+.hamburger-menu{
+    position: relative;
+}
+
+.hamburger-menu input[type = "checkbox"]{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 40px;
+    height: 32px;
+    z-index: 5;
+    opacity: 0;
+}
+
+.ham-lines{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 40px;
+    height: 32px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ham-lines .line{
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #232323;
+    border-radius: 50px;
+}
+
+.nav-items{
+    /* display: none; */
+    padding: 80px 20px 20px 20px;
+    /* padding-top: 80px;
+    padding-left: 20px; */ 
+    width: 300px;
+    height: 100vh;
+    transform: translateX(-110%);
+    transition: transform 0.3s ease-in-out;
+    background-color: #232323;
+    color: white;
+}
+
+.nav-items .nav-item{
+    list-style: none;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.hamburger-menu input[type = "checkbox"]:checked ~ .nav-items{
+    /* display: block; */
+    color: white;
+    transform: translateX(0);
+    
+}
+
+.hamburger-menu input[type = "checkbox"]:checked ~ .ham-lines .line{
+    background-color: white;
+}
+
+.hamburger-menu .ham-lines .line1{
+    transform-origin: 0% 0%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-menu .ham-lines .line3{
+    transform-origin: 0% 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-menu input[type = "checkbox"]:checked ~ .ham-lines .line1{
+    transform: rotate(45deg);
+}
+
+.hamburger-menu input[type = "checkbox"]:checked ~ .ham-lines .line2{
+    /* transform: rotate(45deg); */
+    display: none;
+}
+
+.hamburger-menu input[type = "checkbox"]:checked ~ .ham-lines .line3{
+    transform: rotate(-45deg);
+}
+
+
+

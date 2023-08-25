@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,400;1,100&family=Source+Sans+Pro:wght@300&family=Varela+Round&display=swap');
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    padding: 0 70px;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+nav {
+    background-color: lightgray;
+}
+
+nav ul {
+    padding-left: 0;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.6rem;
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    text-transform: uppercase;
+}
+
+nav li::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+.container {
+    padding: 0 70px;
+}
+
+header .Navbar{
+    padding: none;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+/* .head-div li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 0px;
+    text-decoration: underline;
+    text-transform: capitalize;
+} */
+
+main h3 {
+    border-bottom: 1px solid black;
+}
+
+main {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-div1, .main-div2, .main-div3 {
+    padding: 20px;
+}
+/* 
+
+main::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+
+@media (max-width: 500px) {
+
+    h1{
+        font-size: medium;
+    }
+
+    nav li{
+        display: block;
+    }
+    main{
+        display: block;
+    }
+
+    .container {
+        padding: 0 2px;
+    }
+}

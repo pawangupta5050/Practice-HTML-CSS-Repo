@@ -1,0 +1,14 @@
+.box1{
+    width: 100px;
+    height: 100px;
+    background: violet;
+    transition: background,height,width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.box1:hover{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}

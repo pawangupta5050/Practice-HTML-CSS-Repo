@@ -1,0 +1,28 @@
+section{
+    padding: 100px 200px;
+}
+
+/* section .para{
+    display: none;
+} */
+
+#button{
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+#button h2{
+    float: left;
+}
+
+#button i{
+    float: right;
+    padding: 25px;
+}
+
+#button::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
